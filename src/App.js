@@ -1,22 +1,16 @@
 import agus from "../src/images/Agus.png";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={agus} alt="Agustín Minetto" />
-        <h1>Agustín Minetto</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="app">
+      <Row>
+        <Col xs={6} md={4}>
+          <Image className="foto" src={agus} />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
