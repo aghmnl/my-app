@@ -1,9 +1,14 @@
 /* @color: teal */
 
-.app {
+.principal {
 	background-color: teal;
 }
 
+.columnas {
+	display: flex;
+	margin: auto;
+}
+
 .foto {
-	width: 300px;
+	width: 200px;
 }
