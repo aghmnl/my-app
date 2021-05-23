@@ -11,6 +11,7 @@
 	padding: 0;
 	margin: 0;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	display: flex;
 }
 
 .columnas {
@@ -53,10 +54,22 @@
 	font-size: 12px;
 }
 
+.list-group-item {
+	color: var(--color4);
+	background-color: var(--color1);
+	border: none;
+	padding: 10px 20px 10px 20px;
+}
+
 .emphasis {
 	color: var(--color5);
 	font-size: 12px;
 	font-style: italic;
 	text-align: right;
 	margin-left: 150px;
+	margin-bottom: 30px;
+}
+
+.btn {
+	margin: 5px;
 }
