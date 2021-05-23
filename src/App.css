@@ -1,14 +1,62 @@
-/* @color: teal */
+:root {
+	--color1: #555b6eff;
+	--color2: #89b0aeff;
+	--color3: #bee3dbff;
+	--color4: #faf9f9ff;
+	--color5: #ffd6baff;
+}
 
 .principal {
-	background-color: teal;
+	background-color: var(--color1);
+	padding: 0;
+	margin: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .columnas {
 	display: flex;
-	margin: auto;
+}
+
+.columnaIzquierda {
+	padding: 0;
+	max-width: 200px;
+}
+
+.columnaDerecha {
+	padding: 0;
+	margin-left: 40px;
+	margin-right: 20px;
 }
 
 .foto {
 	width: 200px;
+}
+
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.title {
+	color: var(--color4);
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+.subtitle {
+	color: var(--color4);
+	font-size: 16px;
+}
+
+.text {
+	color: var(--color5);
+	font-size: 12px;
+}
+
+.emphasis {
+	color: var(--color5);
+	font-size: 12px;
+	font-style: italic;
+	text-align: right;
+	margin-left: 150px;
 }
