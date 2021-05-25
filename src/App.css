@@ -6,6 +6,11 @@
 	--color5: #ffd6baff;
 }
 
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+
 .principal {
 	background-color: var(--color1);
 	padding: 0;
@@ -54,16 +59,9 @@
 	font-size: 12px;
 }
 
-.list-group-item {
-	color: var(--color4);
-	background-color: var(--color1);
-	border: none;
-	padding: 10px 20px 10px 20px;
-}
-
 .emphasis {
 	color: var(--color5);
-	font-size: 12px;
+	font-size: 14px;
 	font-style: italic;
 	text-align: right;
 	margin-left: 150px;
@@ -71,5 +69,28 @@
 }
 
 .btn {
-	margin: 5px;
+	margin: 5px 0 5px 0;
+	border-radius: 0;
+}
+
+.sections {
+	width: inherit;
+}
+
+.pie {
+	width: 100%;
+}
+
+.list-group {
+	width: inherit;
+	margin: 2% 5% 5% 5%;
+}
+
+.list-group-item {
+	text-align: center;
+	color: var(--color4);
+	border-top-width: 0 !important;
+	background-color: var(--color1);
+	border: none;
+	padding: 0;
 }
