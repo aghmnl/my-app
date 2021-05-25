@@ -55,7 +55,7 @@
 }
 
 .text {
-	color: var(--color5);
+	color: var(--color4);
 	font-size: 12px;
 }
 
@@ -81,6 +81,7 @@
 
 .sections {
 	width: inherit;
+	margin-left: 0 !important;
 }
 
 .pie {
@@ -89,7 +90,7 @@
 
 .list-group {
 	width: inherit;
-	margin: 2% 15% 5% 15%;
+	margin: 1% 4% 1% 4%;
 }
 
 .list-group-item {
@@ -106,4 +107,24 @@
 .list-group-item:hover {
 	background-color: var(--color3);
 	color: var(--color1);
+}
+
+.final {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--color4);
+	background-color: var(--color1);
+	border: none;
+	padding: 0;
+	border-width: 0 !important;
+	border-radius: 0 !important;
+	width: 100%;
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+.final:hover {
+	color: var(--color4);
+	background-color: var(--color1);
 }
