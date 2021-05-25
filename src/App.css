@@ -1,9 +1,9 @@
 :root {
-	--color1: #555b6eff;
-	--color2: #89b0aeff;
-	--color3: #bee3dbff;
-	--color4: #faf9f9ff;
-	--color5: #ffd6baff;
+	--color1: #588b8b; /* background */
+	--color2: #c8553d; /* buttons */
+	--color3: #f28f3b; /* buttons hover */
+	--color4: #ffffff; /* text */
+	--color5: #ffd5c2;
 }
 
 .container-fluid {
@@ -60,7 +60,7 @@
 }
 
 .emphasis {
-	color: var(--color5);
+	color: var(--color4);
 	font-size: 14px;
 	font-style: italic;
 	text-align: right;
@@ -71,6 +71,12 @@
 .btn {
 	margin: 5px 0 5px 0;
 	border-radius: 0;
+	background-color: var(--color2);
+	color: var(--color4);
+}
+.btn:hover {
+	background-color: var(--color3);
+	color: var(--color1);
 }
 
 .sections {
@@ -83,14 +89,21 @@
 
 .list-group {
 	width: inherit;
-	margin: 2% 5% 5% 5%;
+	margin: 2% 15% 5% 15%;
 }
 
 .list-group-item {
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: var(--color4);
-	border-top-width: 0 !important;
 	background-color: var(--color1);
 	border: none;
 	padding: 0;
+	border-width: 0 !important;
+	border-radius: 0 !important;
+}
+.list-group-item:hover {
+	background-color: var(--color3);
+	color: var(--color1);
 }

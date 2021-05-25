@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Col, Row, Image, ButtonGroup, Button, ListGroup } from 'react-bootstrap'
+import { ImWhatsapp, ImLinkedin, ImGithub } from 'react-icons/im'
 import agus from '../src/images/Agus.png'
 import './App.css'
 
@@ -30,18 +31,21 @@ function App() {
 				</Col>
 			</Row>
 			<Row className="pie">
-				<ListGroup horizontal className="text">
-					<ListGroup.Item style={{ width: '20%' }} action href="https://wa.me/5491169700135" target="_blank">
-						+54 911 6970 0135
+				<ListGroup horizontal>
+					<ListGroup.Item style={{ width: '35%' }} action href="https://wa.me/5491169700135" target="_blank">
+						<ImWhatsapp />
+						&nbsp; +54 911 6970 0135
 					</ListGroup.Item>
-					<ListGroup.Item style={{ width: '20%' }} action href="https://www.linkedin.com/in/agustin-minetto/" target="_blank">
-						<b>LinkedIn:</b> agustin-minetto
+					<ListGroup.Item style={{ width: '35%' }} action href="https://www.linkedin.com/in/agustin-minetto/" target="_blank">
+						<ImLinkedin />
+						&nbsp;&nbsp;<b>LinkedIn:</b> agustin-minetto
 					</ListGroup.Item>
-					<ListGroup.Item style={{ width: '15%' }} action href="https://github.com/aghmnl" target="_blank">
-						<b>GitHub:</b> aghmnl
+					<ListGroup.Item style={{ width: '30%' }} action href="https://github.com/aghmnl" target="_blank">
+						<ImGithub />
+						&nbsp;&nbsp;<b>GitHub:</b> aghmnl
 					</ListGroup.Item>
-					<ListGroup.Item style={{ width: '25%' }}>Open for international relocation.</ListGroup.Item>
-					<ListGroup.Item style={{ width: '20%' }}>References available.</ListGroup.Item>
+					{/* <ListGroup.Item style={{ width: '25%' }}>Open for international relocation.</ListGroup.Item>
+					<ListGroup.Item style={{ width: '20%' }}>References available.</ListGroup.Item> */}
 				</ListGroup>
 			</Row>
 		</Container>
