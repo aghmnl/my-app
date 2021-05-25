@@ -1,8 +1,13 @@
 import React from 'react'
-import { Row } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
+import { SiReact } from 'react-icons/si'
 
 function Stack() {
-	return <Row>Stack</Row>
+	return (
+		<Container>
+			<SiReact /> React
+		</Container>
+	)
 }
 
 export default Stack

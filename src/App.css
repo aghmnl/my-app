@@ -1,9 +1,17 @@
-:root {
-	--color1: #588b8b; /* background */
-	--color2: #c8553d; /* buttons */
-	--color3: #f28f3b; /* buttons hover */
-	--color4: #ffffff; /* text */
+/* :root {
+	--color1: #588b8b; 
+	--color2: #c8553d; 
+	--color3: #f28f3b; 
+	--color4: #ffffff; 
 	--color5: #ffd5c2;
+} */
+
+:root {
+	--color1: #003049; /* background */
+	--color2: #d62828; /* buttons */
+	--color3: #f77f00; /* buttons hover */
+	--color4: #eae2b7; /* text */
+	--color5: #fcbf49; /* title */
 }
 
 .container-fluid {
@@ -44,7 +52,7 @@
 }
 
 .title {
-	color: var(--color4);
+	color: var(--color5);
 	font-size: 40px;
 	margin-bottom: 10px;
 }

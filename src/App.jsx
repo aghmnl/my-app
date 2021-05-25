@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Container, Col, Row, Image, ButtonGroup, Button, ListGroup } from 'react-bootstrap'
-import { ImWhatsapp, ImLinkedin, ImGithub } from 'react-icons/im'
+import { SiWhatsapp, SiLinkedin, SiGithub } from 'react-icons/si'
+import { RiPhoneFill } from 'react-icons/ri'
 import Stack from './components/Stack'
 import Work from './components/Work'
 import Projects from './components/Projects'
@@ -56,16 +57,17 @@ function App() {
 					<Row className="pie">
 						<ListGroup horizontal>
 							<ListGroup.Item style={{ width: '35%' }} action href="https://wa.me/5491169700135" target="_blank">
-								<ImWhatsapp />
+								<RiPhoneFill />
+								&nbsp;/&nbsp; <SiWhatsapp />
 								&nbsp; +54 911 6970 0135
 							</ListGroup.Item>
 							<ListGroup.Item style={{ width: '35%' }} action href="https://www.linkedin.com/in/agustin-minetto/" target="_blank">
-								<ImLinkedin />
-								&nbsp;&nbsp;<b>LinkedIn:</b> agustin-minetto
+								<SiLinkedin />
+								&nbsp;&nbsp;<b>LinkedIn:</b>&nbsp;agustin-minetto
 							</ListGroup.Item>
 							<ListGroup.Item style={{ width: '30%' }} action href="https://github.com/aghmnl" target="_blank">
-								<ImGithub />
-								&nbsp;&nbsp;<b>GitHub:</b> aghmnl
+								<SiGithub />
+								&nbsp;&nbsp;<b>GitHub:</b>&nbsp;aghmnl
 							</ListGroup.Item>
 						</ListGroup>
 					</Row>
