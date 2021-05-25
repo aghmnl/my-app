@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Container, Col, Row, Image, ButtonGroup, Button, ListGroup } from 'react-bootstrap'
 import { SiWhatsapp, SiLinkedin, SiGithub } from 'react-icons/si'
 import { RiPhoneFill } from 'react-icons/ri'
@@ -12,6 +12,23 @@ import './App.css'
 
 function App() {
 	const [show, setShow] = useState('stack')
+	const [fixed, setFixed] = useState('')
+
+	useEffect(() => {}, [fixed])
+
+	function handleFocus(section) {
+		document.getElementById(section).focus({ preventScroll: false })
+	}
+
+	function handleFixed(section) {
+		if (fixed === section) {
+			setFixed('')
+			document.activeElement.blur()
+		} else {
+			handleFocus(section)
+			setFixed(section)
+		}
+	}
 
 	return (
 		<Container fluid>
@@ -20,19 +37,47 @@ function App() {
 					<Image src={agus} className="foto" />
 
 					<ButtonGroup vertical className="sections">
-						<Button className="selector" onClick={() => setShow('stack')}>
+						<Button
+							id="stack"
+							className="selector"
+							onMouseOver={() => {
+								setShow('stack')
+							}}
+							onClick={() => handleFixed('stack')}
+						>
 							Stack
 						</Button>
-						<Button className="selector" onClick={() => setShow('work')}>
+						<Button
+							id="work"
+							className="selector"
+							onMouseOver={() => {
+								setShow('work')
+							}}
+							onClick={() => handleFixed('work')}
+						>
 							Work experience
 						</Button>
-						<Button className="selector" onClick={() => setShow('projects')}>
+						<Button id="projects" className="selector" onMouseOver={() => setShow('projects')} onClick={() => handleFixed('projects')}>
 							Projects
 						</Button>
-						<Button className="selector" onClick={() => setShow('education')}>
+						<Button
+							id="education"
+							className="selector"
+							onMouseOver={() => {
+								setShow('education')
+							}}
+							onClick={() => handleFixed('education')}
+						>
 							Education
 						</Button>
-						<Button className="selector" onClick={() => setShow('extra')}>
+						<Button
+							id="extra"
+							className="selector"
+							onMouseOver={() => {
+								setShow('extra')
+							}}
+							onClick={() => handleFixed('extra')}
+						>
 							Extra info
 						</Button>
 					</ButtonGroup>
@@ -49,11 +94,11 @@ function App() {
 						countries. I led a group of 40 people in shifts, operating 10 refinery units. I continuously improved processes (LEAN) and created tools to
 						work more efficiently and effectively. I always promote an enjoyable and open working atmosphere.
 					</Row>
-					{show === 'stack' && <Stack />}
-					{show === 'work' && <Work />}
-					{show === 'projects' && <Projects />}
-					{show === 'education' && <Education />}
-					{show === 'extra' && <Extra />}
+					{((!fixed && show === 'stack') || fixed === 'stack') && <Stack />}
+					{((!fixed && show === 'work') || fixed === 'work') && <Work />}
+					{((!fixed && show === 'projects') || fixed === 'projects') && <Projects />}
+					{((!fixed && show === 'education') || fixed === 'education') && <Education />}
+					{((!fixed && show === 'extra') || fixed === 'extra') && <Extra />}
 					<Row className="pie">
 						<ListGroup horizontal>
 							<ListGroup.Item className="contacto" style={{ width: '35%' }} action href="https://wa.me/5491169700135" target="_blank">
