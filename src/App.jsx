@@ -20,19 +20,19 @@ function App() {
 					<Image src={agus} className="foto" />
 
 					<ButtonGroup vertical className="sections">
-						<Button variant="secondary" onClick={() => setShow('stack')}>
+						<Button className="selector" onClick={() => setShow('stack')}>
 							Stack
 						</Button>
-						<Button variant="secondary" onClick={() => setShow('work')}>
+						<Button className="selector" onClick={() => setShow('work')}>
 							Work experience
 						</Button>
-						<Button variant="secondary" onClick={() => setShow('projects')}>
+						<Button className="selector" onClick={() => setShow('projects')}>
 							Projects
 						</Button>
-						<Button variant="secondary" onClick={() => setShow('education')}>
+						<Button className="selector" onClick={() => setShow('education')}>
 							Education
 						</Button>
-						<Button variant="secondary" onClick={() => setShow('extra')}>
+						<Button className="selector" onClick={() => setShow('extra')}>
 							Extra info
 						</Button>
 					</ButtonGroup>
@@ -56,16 +56,16 @@ function App() {
 					{show === 'extra' && <Extra />}
 					<Row className="pie">
 						<ListGroup horizontal>
-							<ListGroup.Item style={{ width: '35%' }} action href="https://wa.me/5491169700135" target="_blank">
+							<ListGroup.Item className="contacto" style={{ width: '35%' }} action href="https://wa.me/5491169700135" target="_blank">
 								<RiPhoneFill />
 								&nbsp;/&nbsp; <SiWhatsapp />
 								&nbsp; +54 911 6970 0135
 							</ListGroup.Item>
-							<ListGroup.Item style={{ width: '35%' }} action href="https://www.linkedin.com/in/agustin-minetto/" target="_blank">
+							<ListGroup.Item className="contacto" style={{ width: '35%' }} action href="https://www.linkedin.com/in/agustin-minetto/" target="_blank">
 								<SiLinkedin />
 								&nbsp;&nbsp;<b>LinkedIn:</b>&nbsp;agustin-minetto
 							</ListGroup.Item>
-							<ListGroup.Item style={{ width: '30%' }} action href="https://github.com/aghmnl" target="_blank">
+							<ListGroup.Item className="contacto" style={{ width: '30%' }} action href="https://github.com/aghmnl" target="_blank">
 								<SiGithub />
 								&nbsp;&nbsp;<b>GitHub:</b>&nbsp;aghmnl
 							</ListGroup.Item>

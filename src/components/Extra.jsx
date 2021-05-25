@@ -1,8 +1,12 @@
 import React from 'react'
-import { Row } from 'react-bootstrap'
+// import { Row } from 'react-bootstrap'
 
 function Extra() {
-	return <Row>Extra</Row>
+	return (
+		<div className="section">
+			<div className="sectionTitle">Extra info</div>
+		</div>
+	)
 }
 
 export default Extra

@@ -1,8 +1,12 @@
 import React from 'react'
-import { Row } from 'react-bootstrap'
+// import { Col, ListGroup } from 'react-bootstrap'
 
 function Education() {
-	return <Row>Education</Row>
+	return (
+		<div className="section">
+			<div className="sectionTitle">Education</div>
+		</div>
+	)
 }
 
 export default Education
