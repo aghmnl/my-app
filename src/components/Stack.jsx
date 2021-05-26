@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, ListGroup } from 'react-bootstrap'
-import { lang, front, back, design, testing, mobile } from './Const.js'
-import '../styles/Stack.css'
+import { lang, front, back, design, testing, mobile } from '../content/Stack.jsx'
+import '../styles/Sections.css'
 
 const row1 = [
 	[lang, 'Languages'],
