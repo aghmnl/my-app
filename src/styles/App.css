@@ -50,24 +50,6 @@
 	margin-bottom: 10px;
 }
 
-.section {
-	height: 320px;
-}
-
-.sectionTitle {
-	background-color: var(--color5);
-	color: var(--color1);
-	font-size: 24px;
-	font-weight: bold;
-	padding: 2px 2px 2px 10px;
-	margin: 0 0 10px 0;
-}
-
-.subtitle {
-	color: var(--color5);
-	font-size: 20px;
-}
-
 .text {
 	color: var(--color4);
 	font-size: 16px;
@@ -80,31 +62,6 @@
 	text-align: right;
 	margin-left: 150px;
 	margin-bottom: 30px;
-}
-
-.columns {
-	display: flex;
-}
-
-.column {
-	margin: 2px 5px 5px 2px;
-	padding: 5px 5px 5px 5px;
-	border-color: transparent !important;
-	border-width: 2px !important;
-	border: solid;
-}
-
-.column:hover {
-	border-color: var(--color5) !important;
-}
-
-.itemLista {
-	color: var(--color4);
-	background-color: transparent;
-	padding: 0 0 0 3px;
-	font-size: 16px;
-	margin: 2px 1px 1px 30px;
-	border-color: transparent;
 }
 
 .list-group {
