@@ -1,4 +1,6 @@
 import React from 'react'
+import '../styles/App.css'
+
 // import { Row } from 'react-bootstrap'
 
 function Work() {
