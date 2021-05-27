@@ -1,10 +1,7 @@
 import React from 'react'
 import { Col, ListGroup, Row } from 'react-bootstrap'
 import { education, languages } from '../content/Education'
-
 import '../styles/Sections.css'
-
-// import { Col, ListGroup } from 'react-bootstrap'
 
 function Education() {
 	return (
@@ -17,7 +14,7 @@ function Education() {
 							return (
 								<ListGroup.Item key={index} className="itemLista">
 									<Row>
-										<i>{e.year}</i>&nbsp;&nbsp;<div className="description">{e.title}</div>
+										<i>{e.year}</i>&nbsp;&nbsp;<div className="strong">{e.title}</div>
 									</Row>
 									<Row className="place">
 										{e.place}&nbsp;&nbsp;

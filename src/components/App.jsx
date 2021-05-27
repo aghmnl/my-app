@@ -41,7 +41,11 @@ function App() {
 					</ListGroup>
 				</Col>
 				<Col className="columnaDerecha">
-					<Row className="title">Agustín Minetto</Row>
+					<Row className="title">
+						Agustín Minetto&nbsp;
+						<div className="profession">Full Stack Developer | Chemical Engineer</div>
+					</Row>
+
 					<Row className="emphasis">
 						Passionate developer of digital tools that improve user&apos;s lives. I love having challenges and learning every day. I have experience as a
 						Full-Stack Developer (Osmind – USA) and also more than 15 years of experience as a Chemical Engineer in different industries and countries. I

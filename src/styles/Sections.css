@@ -1,5 +1,5 @@
 .section {
-	height: 320px;
+	height: auto;
 }
 
 .sectionTitle {
@@ -42,7 +42,7 @@
 	border-color: transparent;
 }
 
-.description {
+.strong {
 	color: var(--color5);
 }
 
@@ -53,4 +53,13 @@
 
 .site {
 	opacity: 0.5;
+}
+
+.rows {
+	display: grid;
+	grid-template-columns: min-content min-content min-content min-content auto;
+}
+
+.city {
+	justify-self: end;
 }

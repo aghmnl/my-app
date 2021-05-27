@@ -8,18 +8,21 @@ function Footer() {
 	return (
 		<Row className="pie">
 			<ListGroup horizontal>
-				<ListGroup.Item className="contacto" style={{ width: '35%' }} action href="https://wa.me/5491169700135" target="_blank">
+				<ListGroup.Item className="contacto" style={{ width: '25%' }} action href="tel:+5491169700135">
 					<RiPhoneFill />
-					&nbsp;/&nbsp; <SiWhatsapp />
-					&nbsp; +54 911 6970 0135
+					&nbsp;&nbsp;+54 911 6970 0135
 				</ListGroup.Item>
-				<ListGroup.Item className="contacto" style={{ width: '35%' }} action href="https://www.linkedin.com/in/agustin-minetto/" target="_blank">
+				<ListGroup.Item className="contacto" style={{ width: '25%' }} action href="https://wa.me/5491169700135" target="_blank">
+					<SiWhatsapp />
+					&nbsp;&nbsp;<b>WhatsApp</b>
+				</ListGroup.Item>
+				<ListGroup.Item className="contacto" style={{ width: '25%' }} action href="https://www.linkedin.com/in/agustin-minetto/" target="_blank">
 					<SiLinkedin />
-					&nbsp;&nbsp;<b>LinkedIn:</b>&nbsp;agustin-minetto
+					&nbsp;&nbsp;<b>LinkedIn</b>
 				</ListGroup.Item>
-				<ListGroup.Item className="contacto" style={{ width: '30%' }} action href="https://github.com/aghmnl" target="_blank">
+				<ListGroup.Item className="contacto" style={{ width: '25%' }} action href="https://github.com/aghmnl" target="_blank">
 					<SiGithub />
-					&nbsp;&nbsp;<b>GitHub:</b>&nbsp;aghmnl
+					&nbsp;&nbsp;<b>GitHub</b>
 				</ListGroup.Item>
 			</ListGroup>
 		</Row>

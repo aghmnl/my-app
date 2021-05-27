@@ -13,6 +13,21 @@
 	border-width: 0 !important;
 	border-radius: 0 !important;
 }
+.contacto:link {
+	background-color: var(--color1) !important;
+	color: var(--color4) !important;
+}
+.contacto:visited {
+	background-color: var(--color1) !important;
+	color: var(--color4) !important;
+}
+.contacto:focus {
+	background-color: var(--color3) !important;
+	color: var(--color1) !important;
+	border-width: 10px !important;
+	border-radius: 10px !important;
+}
+
 .contacto:hover {
 	background-color: var(--color3) !important;
 	color: var(--color1) !important;
@@ -20,9 +35,9 @@
 	border-radius: 10px !important;
 }
 
-.contacto:visited {
-	background-color: var(--color1);
-	color: var(--color4);
+.contacto:active {
+	background-color: var(--color3) !important;
+	color: var(--color1) !important;
 	border-width: 10px !important;
 	border-radius: 10px !important;
 }

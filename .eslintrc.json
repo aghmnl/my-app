@@ -17,7 +17,6 @@
 		"indent": ["error", "tab"],
 		"quotes": ["error", "single"],
 		"semi": ["error", "never"],
-		"prettier/prettier": "error",
-		"max-len": ["error", 170]
+		"prettier/prettier": "error"
 	}
 }

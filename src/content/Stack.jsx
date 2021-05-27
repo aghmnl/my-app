@@ -1,6 +1,20 @@
 import React from 'react'
-import { SiJavascript, SiTypescript, SiJava, SiReact, SiRedux, SiNodeDotJs, SiAmazonaws, SiPostgresql, SiCss3, SiBootstrap } from 'react-icons/si'
-
+import {
+	SiJavascript,
+	SiTypescript,
+	SiJava,
+	SiReact,
+	SiRedux,
+	SiNodeDotJs,
+	SiAmazonaws,
+	SiPostgresql,
+	SiCss3,
+	SiBootstrap,
+	SiGit,
+	SiGithub,
+} from 'react-icons/si'
+import { FaLess } from 'react-icons/fa'
+import { DiScrum } from 'react-icons/di'
 export const lang = {
 	a: (
 		<div>
@@ -44,13 +58,13 @@ export const back = {
 	b: (
 		<div>
 			<SiAmazonaws />
-			&nbsp; AWS
+			&nbsp; AWS / DynamoDB
 		</div>
 	),
 	c: (
 		<div>
 			<SiPostgresql />
-			&nbsp; PostgresSQL
+			&nbsp; PostgresSQL / PGAdmin
 		</div>
 	),
 }
@@ -65,6 +79,12 @@ export const design = {
 		<div>
 			<SiBootstrap />
 			&nbsp; React-Bootsrap
+		</div>
+	),
+	c: (
+		<div>
+			<FaLess />
+			&nbsp; Less
 		</div>
 	),
 }
@@ -83,6 +103,24 @@ export const mobile = {
 		<div>
 			<SiJava />
 			&nbsp; Java
+		</div>
+	),
+}
+
+export const workflow = {
+	a: (
+		<div>
+			<SiGit /> &nbsp; Git
+		</div>
+	),
+	b: (
+		<div>
+			<SiGithub /> &nbsp; GitHub
+		</div>
+	),
+	c: (
+		<div>
+			<DiScrum /> &nbsp; Scrum
 		</div>
 	),
 }
