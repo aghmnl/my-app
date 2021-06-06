@@ -1,5 +1,20 @@
 export const work = [
 	{
+		company: 'Italic',
+		place: 'remote',
+		city: 'Los Angeles, CA, USA',
+		site: 'italic.com',
+		url: 'https://italic.com',
+		positions: [
+			{
+				title: 'Frontend Software Engineer',
+				time: 'May 2021 - present',
+				description:
+					'Developer of the Italic Portal. I focus on applications to empower Italic internal organization as well as merchant partners so that they can work as autonomously and efficiently as possible.',
+			},
+		],
+	},
+	{
 		company: 'HENRY',
 		place: 'remote',
 		city: 'Buenos Aires, Argentina',
@@ -10,9 +25,9 @@ export const work = [
 				title: 'TAs & HHs Coordinator',
 				time: 'Oct 2020 - present',
 				description:
-					'Coordinator of Teaching Assistants (known as PMs and HHs): advanced students that help groups of beginner students with homework and other activities during their first stages in the Bootcamp.',
+					'Coordinator of Teaching Assistants (known as TAs and HHs): advanced students that help groups of beginner students with homework and other activities during their first stages in the Bootcamp.',
 				achievements:
-					'Coaching of PMs & HHs. Consolidation of the PMs & HHs selection process. Creation of the PMs Review Group. Consolidation of the HHs program. Implementation of Code of Conduct talk. Implementation of PMs & HHs job descriptions. Improvement of internal processes.',
+					'Coaching of TAs & HHs. Consolidation of the TAs & HHs selection process. Creation of the TAs Review Group. Consolidation of the HHs program. Implementation of Code of Conduct talk. Implementation of TAs & HHs job descriptions. Improvement of internal processes.',
 			},
 		],
 	},

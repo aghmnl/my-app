@@ -12,6 +12,11 @@ import {
 	SiBootstrap,
 	SiGit,
 	SiGithub,
+	SiNextDotJs,
+	SiGraphql,
+	SiApollographql,
+	SiWordpress,
+	SiTailwindcss,
 } from 'react-icons/si'
 import { FaLess } from 'react-icons/fa'
 import { DiScrum } from 'react-icons/di'
@@ -38,13 +43,14 @@ export const lang = {
 export const front = {
 	a: (
 		<div>
-			<SiReact /> &nbsp; React
+			<SiReact />
+			&nbsp;React
 		</div>
 	),
 	b: (
 		<div>
 			<SiRedux />
-			&nbsp; Redux
+			&nbsp;Redux
 		</div>
 	),
 }
@@ -64,9 +70,10 @@ export const back = {
 	c: (
 		<div>
 			<SiPostgresql />
-			&nbsp; PostgresSQL / PGAdmin
+			&nbsp; PGAdmin
 		</div>
 	),
+	d: <div>PostgresSQL</div>,
 }
 
 export const design = {
@@ -75,18 +82,20 @@ export const design = {
 			<SiCss3 /> &nbsp; CSS
 		</div>
 	),
+
 	b: (
-		<div>
-			<SiBootstrap />
-			&nbsp; React-Bootsrap
-		</div>
-	),
-	c: (
 		<div>
 			<FaLess />
 			&nbsp; Less
 		</div>
 	),
+	c: (
+		<div>
+			<SiBootstrap />
+			&nbsp; React-Bootsrap
+		</div>
+	),
+	d: <div>Ant design</div>,
 }
 
 export const testing = {
@@ -121,6 +130,34 @@ export const workflow = {
 	c: (
 		<div>
 			<DiScrum /> &nbsp; Scrum
+		</div>
+	),
+}
+
+export const prox = {
+	a: (
+		<div>
+			<SiNextDotJs /> &nbsp; Next.js
+		</div>
+	),
+	b: (
+		<div>
+			<SiGraphql /> &nbsp; GpraphQL
+		</div>
+	),
+	c: (
+		<div>
+			<SiApollographql /> &nbsp; Apollo
+		</div>
+	),
+	d: (
+		<div>
+			<SiWordpress /> &nbsp; Wordpress
+		</div>
+	),
+	e: (
+		<div>
+			<SiTailwindcss /> &nbsp; Tailwindcss
 		</div>
 	),
 }
